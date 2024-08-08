@@ -6,34 +6,34 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Xiaopeng Liu
+title: Cloud DevSecOps Architect
+email: liuxp87@gmail.com
+website: https://xpdable.github.io/
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+# twitter_username: facespics
+github_username:  xpdable
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
+instagram_username: xpdable
+linkedin_username: liuxiaopeng
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -48,69 +48,174 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, my name's Xiaopeng and I'm a IT Architect. As a lazy engineer, I love to automate everything both in work and life. I also love to help people with IT problems.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I started my career as QA automation engineer, and I am now doing DevSecOps with AWS, also contributing to Observability and Chaos engineering.
+
+  I am most skilled in: <mark>Automation</mark> and <mark>Drinking Cola</mark>
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: chaostoolkit-saltstack
+        link: https://github.com/chaostoolkit-incubator/chaostoolkit-saltstack
         # link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
+          - title:  chaostoolkit-incubator/chaostoolkit-saltstack
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+            url: https://github.com/chaostoolkit-incubator/chaostoolkit-saltstack
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          This is an opensourced chaos engineering library I created
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          I created this project to support my in-house chaos engineering service. At that time, chaos engineering is a new topic in the industry, therefore many tasks have been done ourselves. On the other hand, it is also great to share to everyone.
+
+      - layout: top-middle
+        title: chaostoolkit-azure
+        link: https://github.com/chaostoolkit-incubator/chaostoolkit-azure
+        # link_text: Project Website
+        additional_links:
+          - title:  chaostoolkit-incubator/chaostoolkit-azure
+            icon: fab fa-github
+            url: https://github.com/chaostoolkit-incubator/chaostoolkit-azure
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is an opensourced chaos engineering library I contributed
+        description: | # this will include new lines to allow paragraphs
+          I worked on this project as Azure CN is not supported at beginning. Also I added some new features to support more chaos engineering experiments in Azure. BTW, python SDK for Azure sucks!
+
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: 探索混沌工程的本质
+        link: https://www.bilibili.com/video/BV1BB4y1s7pq/?spm_id_from=333.337.search-card.all.click
+        # link_text: Project Website
+        additional_links:
+          - title:  探索混沌工程的本质 刘霄鹏 中国DevOps社区
+            # icon: fab fa-bilibili
+            url: https://www.bilibili.com/video/BV1BB4y1s7pq/?spm_id_from=333.337.search-card.all.click
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is an online open talk in Chinese by DevOps community
+        description: | # this will include new lines to allow paragraphs
+          This is an online open talk in Chinese by DevOps community after I gave an onsite sharing session in the meetup. It is to advocate chaos engineering.
+
+      - layout: top-middle
+        title: 软件工程：失败乃成功之母？
+        link: https://mp.weixin.qq.com/s/i6uzIZFbjiJ9ENRNMYA11Q
+        # link_text: Project Website
+        additional_links:
+          - title:  软件工程：失败乃成功之母？
+            # icon: fab fa-github
+            url: https://mp.weixin.qq.com/s/i6uzIZFbjiJ9ENRNMYA11Q
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is a Chinese translation for the [original blog by Kim Harrison in LaunchDarkly: A Key to Success: Failure with Chaos Engineering](https://launchdarkly.com/blog/a-key-to-success-failure-with-chaos-engineering/)
+        description: | # this will include new lines to allow paragraphs
+          [Ana Medina](https://twitter.com/Ana_M_Medina), Chaos Engineer at Gremlin, spoke about how performing Chaos Engineering experiments and celebrating failure helps engineers build muscle memory, spend more time building features and build more resilient complex systems. 
+          I found it is really helpful for Chinese chaos engineering community and it is the translation publication.
+
+      - layout: top-middle
+        title: 避免分布式系统的级联故障
+        link: https://mp.weixin.qq.com/s/sPFpoaUZpB9I3gwWSDQQzQ
+        # link_text: Project Website
+        additional_links:
+          - title:  避免分布式系统的级联故障
+            # icon: fab fa-infoq
+            url: https://mp.weixin.qq.com/s/sPFpoaUZpB9I3gwWSDQQzQ
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is a Chinese translation for the [original blog at InfoQ: How to Avoid Cascading Failures in Distributed Systems by Laura Nolan](https://www.infoq.com/articles/anatomy-cascading-failure/)
+        description: | # this will include new lines to allow paragraphs
+          In this article, public accounts of real production incidents are discussed, with the greatest respect for all the engineering organizations involved. Every organization that runs distributed software systems experiences outages, but not all are open and honest enough to provide clear public accounts of their production incidents. Those who do share their experiences deserve appreciation and esteem (and sometimes, sympathy). 
+          I found it is really helpful for Chinese chaos engineering community and it is the translation publication.
+
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: Mercedes-Benz
+        link: www.mercedes-benz.com
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        sub_title: DevSecOps Architect
+        caption: 11/2018 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          Automate anything! DevSecOps/InfraAsCode/Observability...
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            The digital transformation is not easy, especially for non-IT enterprises. Therefore advanced technology is applied to shaping the furture of enterprise IT, I am pround to be involved in many work and advantures.
+
+      - layout: left
+        title: Thomson Reuters
+        link: www.thomsonreuters.com
+        # link_text: boringcompany.com
+        sub_title: QA Team Lead
+        caption:  09/2018 - 11/2018
+        quote: >
+          Automate anything! QA/DevOps/CloudMigration/...
+        description: | # this will include new lines to allow paragraphs
+            Quality and latency are essential for data providers. My team and I implemented many automation frameworks that supports tests.
+
+      - layout: left
+        title: others
+        # link: www.thomsonreuters.com
+        # link_text: boringcompany.com
+        # sub_title: QA Team Lead
+        caption:  2009 - 2013
+        quote: >
+          Full-stack developer
+        description: | # this will include new lines to allow paragraphs
+            Old time as QA, Developer
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: RWTH Aachen University, Aachen, Germany
+        caption: 2011 - 2014
+        sub_title: Msc of Software System Engineering
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          During my time at RWTH Aachen I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed the working time with my tutor in i3 department.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          I can not remember the time I struggled with Model Checking...
+
+      - layout: left
+        title: Southeast University, Nanjing, China
+        caption: 2011 - 2014
+        sub_title: Msc of Software System Engineering
+        quote: >
+          Well, I do not want to recall any of this period of time...
+        # description: | # this will include new lines to allow paragraphs
+          
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      During my spare time, I tend to be lazy, but I love to play badminton, cooking and spend time with my kid.
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      I can cooking very well.
+      I love Cola and Radler.
+
+      I was a WOWer who mastered Paladin extremly well, and I had to give up when I becamed a father.
+
+      And I am missing my hometown.
+      
+      ![fc](images/fc.PNG "I always miss my hometown")
 
 # Footer
 footer_show_references: true
