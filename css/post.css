@@ -232,16 +232,18 @@
 }
 
 /* --- Images --- */
-.post-image {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.post-image img {
+.post-content img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   border: 1px solid #222;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.post-image {
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .post-image figcaption {
