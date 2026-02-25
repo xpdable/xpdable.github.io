@@ -1,0 +1,145 @@
+/* ============================================
+   Resume Page Styles
+   ============================================ */
+
+.resume-page {
+  padding: 6rem 1.5rem 4rem;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-breadcrumb {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume-breadcrumb a {
+  color: var(--cyan);
+}
+
+.resume-body {
+  padding: 2rem;
+}
+
+/* --- Header --- */
+.resume-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #222;
+}
+
+.resume-name {
+  color: var(--green);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.resume-role {
+  color: var(--cyan);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.resume-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.resume-meta a {
+  color: var(--cyan);
+}
+
+/* --- Sections --- */
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-section-title {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+/* --- Languages --- */
+.lang-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.lang-item {
+  background: var(--bg-card);
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  transition: border-color 0.3s;
+}
+
+.lang-item:hover {
+  border-color: var(--green);
+}
+
+.lang-name {
+  color: var(--green-dim);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+
+.lang-level {
+  color: var(--dim);
+  font-size: 0.82rem;
+}
+
+/* --- Footer Nav --- */
+.resume-footer-nav {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #222;
+}
+
+.resume-footer-nav .back-link {
+  font-size: 0.9rem;
+  color: var(--green-dim) !important;
+  transition: color 0.2s;
+}
+
+.resume-footer-nav .back-link:hover {
+  color: var(--green) !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .resume-page {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .resume-body {
+    padding: 1.2rem;
+  }
+
+  .resume-name {
+    font-size: 1.3rem;
+  }
+
+  .resume-meta {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .resume-meta .dim {
+    display: none;
+  }
+
+  .lang-grid {
+    gap: 1rem;
+  }
+}

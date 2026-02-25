@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XP — Cloud DevSecOps Architect</title>
+  <meta name="description" content="Xiaopeng Liu — Cloud DevSecOps Architect. 10+ years in DevSecOps, Test Automation, and Chaos Engineering.">
+  <meta property="og:title" content="XP — Cloud DevSecOps Architect">
+  <meta property="og:description" content="Dedicated DevSecOps for nearly 10 years. Test Automation Expert. Chaos Engineering Guru.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬢</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link type="application/atom+xml" rel="alternate" href="feed.xml" title="xpthink">
+</head>
+<body>
+  <!-- Scanline overlay -->
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">xp<span class="blink">_</span></a>
+      <div class="nav-links">
+        <a href="#projects">projects</a>
+        <a href="#blog">blog</a>
+        <a href="resume.html">resume</a>
+        <a href="#contact">contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#projects">./projects</a>
+    <a href="#blog">./blog</a>
+    <a href="resume.html">./resume</a>
+    <a href="#contact">./contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="section hero" id="hero">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">xp@portfolio:~</span>
+      </div>
+      <div class="terminal-body">
+        <pre class="ascii-art">
+ __  __  ____
+ \ \/ / |  _ \
+  \  /  | |_) |
+  /  \  |  __/
+ /_/\_\ |_|
+        </pre>
+        <div class="terminal-line">
+          <span class="prompt">$</span> <span class="cmd">whoami</span>
+        </div>
+        <div class="terminal-line output">
+          <span class="highlight">&gt;</span> <span id="typing-name"></span><span class="cursor" id="cursor-name">█</span>
+        </div>
+        <div class="terminal-line" id="profile-cmd" style="opacity:0">
+          <span class="prompt">$</span> <span class="cmd">cat profile.txt</span>
+        </div>
+        <div class="terminal-line output" id="profile-output" style="opacity:0">
+          <span class="dim">&gt; Dedicated DevSecOps for nearly 10 years on both software and cloud-native infrastructures.</span><br>
+          <span class="dim">&gt; Test Automation Expert with over a decade of experience.</span><br>
+          <span class="dim">&gt; Guru and Advocator for Chaos Engineering.</span><br>
+          <span class="dim">&gt; "I used to believe code was everything. Chaos Engineering taught me better — thinking is what drives real success."</span>
+        </div>
+        <div class="terminal-line" id="nav-cmd" style="opacity:0">
+          <span class="prompt">$</span> <span class="cmd">ls ~/</span>
+        </div>
+        <div class="terminal-line output hero-nav" id="nav-output" style="opacity:0">
+          <a href="#projects">projects/</a>
+          <a href="#blog">blog/</a>
+          <a href="resume.html">resume.txt</a>
+          <a href="#contact">contact/</a>
+        </div>
+        <div class="terminal-line" id="status-cmd" style="opacity:0">
+          <span class="prompt">$</span> <span class="cmd">cat status.txt</span>
+        </div>
+        <div class="terminal-line output" id="status-output" style="opacity:0">
+          <span class="dim">&gt; Working on: IaC, Chaos Engineering, AWS, Azure, K8s</span><br>
+          <span class="dim">&gt; Learning: Kafka</span><br>
+          <span class="dim">&gt; Collaborate: Chaos Engineering</span><br>
+          <span class="dim">&gt; Fun fact: <s>Cola</s> Radler Addiction, ex-WOWer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="prompt">$</span> <span class="cmd">ls -la ~/projects/</span>
+      </div>
+      <div class="projects-terminal">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">~/projects</span>
+          </div>
+          <div class="terminal-body">
+            <div class="ls-header">total 3</div>
+            <a href="https://github.com/chaostoolkit-incubator/chaostoolkit-saltstack" target="_blank" rel="noopener" class="project-row">
+              <span class="perm">drwxr-xr-x</span>
+              <span class="owner">xp</span>
+              <span class="group">owner</span>
+              <span class="size">chaos</span>
+              <span class="date">2023</span>
+              <span class="name">chaostoolkit-saltstack/</span>
+              <span class="desc">— SaltStack driver for Chaos Toolkit (Owner)</span>
+            </a>
+            <a href="https://github.com/chaostoolkit-incubator/chaostoolkit-azure" target="_blank" rel="noopener" class="project-row">
+              <span class="perm">drwxr-xr-x</span>
+              <span class="owner">xp</span>
+              <span class="group">contrib</span>
+              <span class="size">chaos</span>
+              <span class="date">2023</span>
+              <span class="name">chaostoolkit-azure/</span>
+              <span class="desc">— Azure driver for Chaos Toolkit (Contributor)</span>
+            </a>
+            <a href="https://github.com/chaostoolkit-incubator/chaostoolkit-aws" target="_blank" rel="noopener" class="project-row">
+              <span class="perm">drwxr-xr-x</span>
+              <span class="owner">xp</span>
+              <span class="group">contrib</span>
+              <span class="size">chaos</span>
+              <span class="date">2023</span>
+              <span class="name">chaostoolkit-aws/</span>
+              <span class="desc">— AWS driver for Chaos Toolkit (Contributor)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section" id="blog">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="prompt">$</span> <span class="cmd">ls ~/blog/</span>
+      </div>
+      <div class="blog-section">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">xpthink — blog</span>
+          </div>
+          <div class="terminal-body">
+            <div class="blog-tagline">
+              <span class="dim"># "I used to believe code was everything. Chaos Engineering taught me</span><br>
+              <span class="dim"># better — thinking is what drives real success."</span>
+            </div>
+            <div class="blog-motto">
+              <span class="highlight">&gt;</span> Trust me, I am a lazy engineer that wants to automate everything.
+            </div>
+            <div class="blog-posts-header">
+              <span class="prompt">$</span> <span class="cmd">ls posts/ | grep</span>
+            </div>
+            <div class="blog-tags-filter">
+              <button class="tag-btn active" data-tag="all">all</button>
+              <button class="tag-btn" data-tag="devops">devops</button>
+              <button class="tag-btn" data-tag="chaos-engineering">chaos-engineering</button>
+              <button class="tag-btn" data-tag="culture">culture</button>
+              <button class="tag-btn" data-tag="ci-cd">ci-cd</button>
+            </div>
+            <div class="blog-posts">
+              <a href="posts/thoughts-of-devops.html" class="blog-post-row" data-tags="devops,culture,ci-cd">
+                <span class="post-date">2023-07-11</span>
+                <span class="post-title">Thoughts of DevOps</span>
+                <span class="post-tags"><span class="tag">devops</span><span class="tag">culture</span><span class="tag">ci-cd</span></span>
+                <span class="post-arrow">-&gt;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="prompt">$</span> <span class="cmd">ping xp</span>
+      </div>
+      <div class="contact-terminal">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">contact</span>
+          </div>
+          <div class="terminal-body">
+            <div class="ping-line">PING xp (127.0.0.1): 56 data bytes</div>
+            <div class="ping-line">64 bytes from xp: icmp_seq=0 ttl=64 <span class="highlight">location</span>=Stuttgart, Germany</div>
+            <div class="ping-line">64 bytes from xp: icmp_seq=1 ttl=64 <span class="highlight">github</span>=<a href="https://github.com/xpdable" target="_blank" rel="noopener">github.com/xpdable</a></div>
+            <div class="ping-line">64 bytes from xp: icmp_seq=2 ttl=64 <span class="highlight">linkedin</span>=<a href="https://www.linkedin.com/in/liuxiaopeng/" target="_blank" rel="noopener">linkedin.com/in/liuxiaopeng</a></div>
+            <div class="ping-line">64 bytes from xp: icmp_seq=3 ttl=64 <span class="highlight">blog</span>=<a href="#blog">xpthink</a></div>
+            <div class="ping-line stats">--- xp ping statistics ---</div>
+            <div class="ping-line stats">4 packets transmitted, 4 packets received, 0.0% packet loss</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="prompt">$</span> echo "Built with <span class="highlight">&lt;/&gt;</span> and <span class="highlight">caffeine</span>" <span class="dim">// &copy; 2025 XP</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

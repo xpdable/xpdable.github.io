@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} — XP</title>
+  <meta name="description" content="{{title}} — by XP">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="{{date}}">
+  <meta property="article:author" content="XP">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬢</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+  <div class="scanline"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">xp<span class="blink">_</span></a>
+      <div class="nav-links">
+        <a href="../index.html#projects">projects</a>
+        <a href="../index.html#blog">blog</a>
+        <a href="../resume.html">resume</a>
+        <a href="../index.html#contact">contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#projects">./projects</a>
+    <a href="../index.html#blog">./blog</a>
+    <a href="../resume.html">./resume</a>
+    <a href="../index.html#contact">./contact</a>
+  </div>
+
+  <article class="post-page">
+    <div class="post-container">
+
+      <div class="post-breadcrumb">
+        <span class="prompt">$</span> <span class="cmd">cd</span> <a href="../index.html#blog">~/blog</a><span class="dim">/</span><span class="highlight">{{slug}}</span>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">{{slug}}.md</span>
+        </div>
+        <div class="terminal-body post-body">
+
+          <h1 class="post-title">{{title}}</h1>
+          <div class="post-meta-line">
+            <span class="dim">author:</span> <span class="highlight">xp</span>
+            <span class="dim">|</span>
+            <span class="dim">date:</span> <span class="cyan">{{date}}</span>
+            <span class="dim">|</span>
+            <span class="dim">tags:</span>
+            <span class="post-tag-list">
+              {{tags_html}}
+            </span>
+          </div>
+
+          <!-- Language Switcher -->
+          <div class="lang-switcher">
+            <span class="dim">$ LANG=</span>
+            {{lang_buttons}}
+          </div>
+
+          {{lang_contents}}
+
+          {{share_links}}
+
+          <div class="post-footer-nav">
+            <a href="../index.html#blog" class="back-link">
+              <span class="prompt">$</span> <span class="cmd">cd ..</span> <span class="dim">// back to blog</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <span class="prompt">$</span> echo "Built with <span class="highlight">&lt;/&gt;</span> and <span class="highlight">caffeine</span>" <span class="dim">// &copy; 2025 XP</span>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
