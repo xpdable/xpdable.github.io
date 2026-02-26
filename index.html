@@ -28,8 +28,8 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">xp<span class="blink">_</span></a>
       <div class="nav-links">
-        <a href="#projects">projects</a>
         <a href="#blog">blog</a>
+        <a href="#projects">projects</a>
         <a href="resume.html">resume</a>
         <a href="#contact">contact</a>
       </div>
@@ -41,8 +41,8 @@
 
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#projects">./projects</a>
     <a href="#blog">./blog</a>
+    <a href="#projects">./projects</a>
     <a href="resume.html">./resume</a>
     <a href="#contact">./contact</a>
   </div>
@@ -84,8 +84,8 @@
           <span class="prompt">$</span> <span class="cmd">ls ~/</span>
         </div>
         <div class="terminal-line output hero-nav" id="nav-output" style="opacity:0">
-          <a href="#projects">projects/</a>
           <a href="#blog">blog/</a>
+          <a href="#projects">projects/</a>
           <a href="resume.html">resume.txt</a>
           <a href="#contact">contact/</a>
         </div>
@@ -97,6 +97,52 @@
           <span class="dim">&gt; Learning: Kafka</span><br>
           <span class="dim">&gt; Collaborate: Chaos Engineering</span><br>
           <span class="dim">&gt; Fun fact: <s>Cola</s> Radler Addiction, ex-WOWer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section" id="blog">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <span class="prompt">$</span> <span class="cmd">ls ~/blog/</span>
+      </div>
+      <div class="blog-section">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">xpthink — blog</span>
+          </div>
+          <div class="terminal-body">
+            <div class="blog-tagline">
+              <span class="dim"># "I used to believe code was everything. Chaos Engineering taught me</span><br>
+              <span class="dim"># better — thinking is what drives real success."</span>
+            </div>
+            <div class="blog-motto">
+              <span class="highlight">&gt;</span> Trust me, I am a lazy engineer that wants to automate everything.
+            </div>
+            <div class="blog-posts-header">
+              <span class="prompt">$</span> <span class="cmd">ls posts/ | grep</span>
+            </div>
+            <div class="blog-tags-filter">
+              <button class="tag-btn active" data-tag="all">all</button>
+              <button class="tag-btn" data-tag="devops">devops</button>
+              <button class="tag-btn" data-tag="chaos-engineering">chaos-engineering</button>
+              <button class="tag-btn" data-tag="culture">culture</button>
+              <button class="tag-btn" data-tag="ci-cd">ci-cd</button>
+            </div>
+            <div class="blog-posts">
+              <a href="posts/thoughts-of-devops.html" class="blog-post-row" data-tags="devops,culture,ci-cd">
+                <span class="post-date">2023-07-11</span>
+                <span class="post-title">Thoughts of DevOps</span>
+                <span class="post-tags"><span class="tag">devops</span><span class="tag">culture</span><span class="tag">ci-cd</span></span>
+                <span class="post-arrow">-&gt;</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -145,52 +191,6 @@
               <span class="name">chaostoolkit-aws/</span>
               <span class="desc">— AWS driver for Chaos Toolkit (Contributor)</span>
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog -->
-  <section class="section" id="blog">
-    <div class="section-inner reveal">
-      <div class="section-header">
-        <span class="prompt">$</span> <span class="cmd">ls ~/blog/</span>
-      </div>
-      <div class="blog-section">
-        <div class="terminal-window">
-          <div class="terminal-header">
-            <span class="terminal-dot red"></span>
-            <span class="terminal-dot yellow"></span>
-            <span class="terminal-dot green"></span>
-            <span class="terminal-title">xpthink — blog</span>
-          </div>
-          <div class="terminal-body">
-            <div class="blog-tagline">
-              <span class="dim"># "I used to believe code was everything. Chaos Engineering taught me</span><br>
-              <span class="dim"># better — thinking is what drives real success."</span>
-            </div>
-            <div class="blog-motto">
-              <span class="highlight">&gt;</span> Trust me, I am a lazy engineer that wants to automate everything.
-            </div>
-            <div class="blog-posts-header">
-              <span class="prompt">$</span> <span class="cmd">ls posts/ | grep</span>
-            </div>
-            <div class="blog-tags-filter">
-              <button class="tag-btn active" data-tag="all">all</button>
-              <button class="tag-btn" data-tag="devops">devops</button>
-              <button class="tag-btn" data-tag="chaos-engineering">chaos-engineering</button>
-              <button class="tag-btn" data-tag="culture">culture</button>
-              <button class="tag-btn" data-tag="ci-cd">ci-cd</button>
-            </div>
-            <div class="blog-posts">
-              <a href="posts/thoughts-of-devops.html" class="blog-post-row" data-tags="devops,culture,ci-cd">
-                <span class="post-date">2023-07-11</span>
-                <span class="post-title">Thoughts of DevOps</span>
-                <span class="post-tags"><span class="tag">devops</span><span class="tag">culture</span><span class="tag">ci-cd</span></span>
-                <span class="post-arrow">-&gt;</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
